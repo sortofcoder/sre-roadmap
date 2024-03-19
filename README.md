@@ -9,6 +9,13 @@ An opinionated roadmap to become an SRE (Concepts > Tools)
   * Fallacies of distributed computing
   * Synchronous vs. asynchronous
   * Event log vs. message queue
+    
+    | Feature | Event Log  | Message Queue | 
+    | :-------------| :------------- | :------------- |
+    |   Purpose  | Record system events |	Facilitate asynchronous communication |
+    | Content | What happened, timestamps |	Data, instructions, notifications |
+    | Processing |	Analyzed later, not immediate |	Processed by consumers as they become ready |
+    | Use Case |	Monitoring, debugging, compliance	| System integration, task queues, workflows |   
   * Exactly-once delivery
   * Different types of message failure
   * Orchestration vs. choreography
