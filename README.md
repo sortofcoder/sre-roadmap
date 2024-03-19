@@ -7,15 +7,24 @@ An opinionated roadmap to become an SRE (Concepts > Tools)
 
 * _Concepts_
   * Fallacies of distributed computing
+     - Network is reliable
+     - Latency is zero
+     - Bandwidht is infinite
+     - Network is secure
+     - There is one administrator
+     - Transport cost is zero
+     - Topology doesnt change
   * Synchronous vs. asynchronous
   * Event log vs. message queue
-    
+    <details>
+     
     | Feature | Event Log  | Message Queue | 
     | :-------------| :------------- | :------------- |
     |   Purpose  | Record system events |	Facilitate asynchronous communication |
     | Content | What happened, timestamps |	Data, instructions, notifications |
     | Processing |	Analyzed later, not immediate |	Processed by consumers as they become ready |
     | Use Case |	Monitoring, debugging, compliance	| System integration, task queues, workflows |   
+    </details>
   * Exactly-once delivery
   * Different types of message failure
   * Orchestration vs. choreography
